@@ -1,2 +1,2 @@
 # Sobre mim
- Pagina simples para voce me conhecer um pouco
+ Pagina simples para você me conhecer um pouco
