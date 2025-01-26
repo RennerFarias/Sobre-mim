@@ -1,23 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renner Farias</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
             color: #333;
         }
 
         header {
             background: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px 20px;
             text-align: center;
             position: relative;
         }
@@ -52,6 +56,12 @@
 
         section h2 {
             color: #444;
+            font-size: 1.8rem;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.6;
         }
 
         footer {
@@ -59,9 +69,7 @@
             padding: 10px;
             background: #333;
             color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
 
         a {
@@ -72,17 +80,58 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /*Isso aqui é pra essa merda funcionar no celular sem quebrar a porra do site */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p {
+                font-size: 0.95rem;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                font-size: 1.3rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+
+            footer {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bem vindo</h1>
+        <h1>Bem-vindo</h1>
     </header>
-
+    
     <main>
         <section>
             <h2>Quem sou eu?</h2>
-            <P>Sou Renner Farias, tenho 19 anos e valorizo uma vida disciplinada e equilibrada. Divido meu dia entre o desenvolvimento do corpo, com musculação, corrida e natação, e o crescimento da mente, com leitura e estudo, que são pilares fundamentais na minha rotina.
+            <p>Sou Renner Farias, tenho 19 anos e valorizo uma vida disciplinada e equilibrada. Divido meu dia entre o desenvolvimento do corpo, com musculação, corrida e natação, e o crescimento da mente, com leitura e estudo, que são pilares fundamentais na minha rotina.</p>
         </section>
 
         <section>
@@ -97,8 +146,17 @@
 
         <section>
             <h2>Acompanhe minha jornada</h2>
-            <p>Se você quiser saber mais sobre meu caminho, aprender junto e trocar ideias, fique à vontade para me seguir nas redes sociais. Todos os links estão disponíveis abaixo, e será ótimo interagir com você!
-                <a href="https://discord.com/users/1276178485492322335" target="_blank">Discord</a>, <a href="https://www.instagram.com/rennerfarias_/" target="_blank">Instagram</a>, and <a href="https://www.youtube.com/@rennerfarias" target="_blank">YouTube</a>.</p>
+            <p>Se você quiser saber mais sobre meu caminho, aprender junto e trocar ideias, fique à vontade para me seguir nas redes sociais. Todos os links estão disponíveis abaixo, e será ótimo interagir com você!</p>
+            <p>
+                <a href="https://discord.com/users/1276178485492322335" target="_blank">Discord</a>, 
+                <a href="https://www.instagram.com/rennerfarias_/" target="_blank">Instagram</a>, 
+                <a href="https://www.youtube.com/@rennerfarias" target="_blank">YouTube</a>.
+            </p>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Renner Farias | Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
